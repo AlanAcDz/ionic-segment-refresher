@@ -1,0 +1,7 @@
+{
+  "name": "ionic-segment-refresher",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
