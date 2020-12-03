@@ -1,20 +1,19 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-title>
-      Blank
+      Ionic Segment Refresher Issue
     </ion-title>
   </ion-toolbar>
+  <ion-segment value="page1" (ionChange)="segmentChanged($event)">
+    <ion-segment-button value="page1">
+      <ion-label>Page 1</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="page2">
+      <ion-label>Page 2</ion-label>
+    </ion-segment-button>
+  </ion-segment>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<ion-content>
+  <router-outlet></router-outlet>
 </ion-content>
